@@ -32,7 +32,7 @@ Generated a final summary table with industry, year, num_unicorns, average_valua
 
 -unicorn_industry_trends.csv → Export of the final SQL result
 
-Dataset Structure (SQL Tables)
+**Dataset Structure (SQL Tables)**
 
 The analysis uses four related SQL tables from the unicorns database:
 
@@ -44,7 +44,7 @@ industries → company_id, industry
 
 companies → company_id, company, city, country, continent
 
-SQL Query Used in the Analysis
+**SQL Query Used in the Analysis**
 
 A single SQL query (using CTEs) was used to obtain the required output; it is included inside the project notebook and saved into a pandas DataFrame called df.
 
@@ -54,7 +54,7 @@ yearly_rankings → computes the number of unicorns and average valuation per in
 
 Final SELECT → filters to the three top industries and the years 2019–2021, converts valuations to billions, and returns the final summary table
 
-Results Overview
+**Results Overview**
 
 The final table (and exported CSV) contains:
 
