@@ -4,35 +4,35 @@ This project performs a SQL-based analysis of high-growth “unicorn” companie
 
 The objectives were to:
 
-Identify the three best-performing industries based on the number of new unicorns created in 2019, 2020, and 2021 combined
+- Identify the three best-performing industries based on the number of new unicorns created in 2019, 2020, and 2021 combined
 
-For those industries, calculate the number of unicorns per year and their average valuation in billions of dollars, rounded to two decimal places
+- For those industries, calculate the number of unicorns per year and their average valuation in billions of dollars, rounded to two decimal places
 
-These insights help an investment firm see which industries are producing the most high-value companies and where future opportunities may lie.
+- These insights help an investment firm see which industries are producing the most high-value companies and where future opportunities may lie.
 
 **What This Project Achieved**
 
-Joined the industries, dates, and funding tables to combine industry, unicorn year, and company valuation
+- Joined the industries, dates, and funding tables to combine industry, unicorn year, and company valuation
 
-Filtered companies that became unicorns in 2019, 2020, or 2021
+- Filtered companies that became unicorns in 2019, 2020, or 2021
 
-Identified the top three industries by count of new unicorns across those years
+- Identified the top three industries by count of new unicorns across those years
 
-Counted the number of unicorns per industry–year combination
+- Counted the number of unicorns per industry–year combination
 
-Calculated the average valuation per industry–year, converted it to billions of USD, and rounded to two decimal places
+- Calculated the average valuation per industry–year, converted it to billions of USD, and rounded to two decimal places
 
-Generated a final summary table with industry, year, num_unicorns, average_valuation_billions ordered by year and number of unicorns in descending order
+- Generated a final summary table with industry, year, num_unicorns, average_valuation_billions ordered by year and number of unicorns in descending order
 
 **Files Included**
 
--notebook.ipynb → SQL notebook containing the analysis
+- notebook.ipynb → SQL notebook containing the analysis
 
--README.md → Project documentation
+- README.md → Project documentation
 
--SQL Queries → Raw SQL Queries used for generating the outputs
+- SQL Queries → Raw SQL Queries used for generating the outputs
 
--unicorn_industry_trends.csv → Export of the final SQL result
+- unicorn_industry_trends.csv → Export of the final SQL result
 
 **Dataset Structure (SQL Tables)**
 
@@ -48,13 +48,13 @@ companies → company_id, company, city, country, continent
 
 **SQL Query Used in the Analysis**
 
-A single SQL query (using CTEs) was used to obtain the required output; it is included inside the project notebook and saved into a pandas DataFrame called df.
+- A single SQL query (using CTEs) was used to obtain the required output; it is included inside the project notebook and saved into a pandas DataFrame called df.
 
-top_industries → finds the three industries with the most new unicorns created between 2019 and 2021
+- top_industries → finds the three industries with the most new unicorns created between 2019 and 2021
 
-yearly_rankings → computes the number of unicorns and average valuation per industry and year
+- yearly_rankings → computes the number of unicorns and average valuation per industry and year
 
-Final SELECT → filters to the three top industries and the years 2019–2021, converts valuations to billions, and returns the final summary table
+- Final SELECT → filters to the three top industries and the years 2019–2021, converts valuations to billions, and returns the final summary table
 
 **Results Overview**
 
