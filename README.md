@@ -30,6 +30,8 @@ Generated a final summary table with industry, year, num_unicorns, average_valua
 
 -README.md → Project documentation
 
+-SQL Queries → Raw SQL Queries used for generating the outputs
+
 -unicorn_industry_trends.csv → Export of the final SQL result
 
 **Dataset Structure (SQL Tables)**
